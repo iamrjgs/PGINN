@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "PGINN"
+version = "2.2.0"
+description = "Physics and Geometry Informed Neural Network radiotherapy dose calculation engine with ray-tracing input generation."
+authors = [
+    { name = "Ankit Pant", email = "apant@buffalo.edu" },
+    { name = "Ricardo Garcia Santiago", email = "rgarcia7@buffalo.edu" },
+    { name = "Braeden Cairns", email = "braedenc@buffalo.edu" },
+    { name = "Copilot" },
+]
+readme = "README.md"
+license = { file = "LICENSE" }
+dependencies = [
+    "opencv-python-headless",
+    "pydicom",
+    "pymedphys",
+    "numpy",
+    "numba",
+    "SimpleITK",
+    "tensorflow",
+    "torch",
+    "torchinfo",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["PGINN*"]
+
+[tool.setuptools.package-data]
+"PGINN.nn_models.iDOTA.default_model_directory" = ["*"]
+
