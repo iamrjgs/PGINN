@@ -85,7 +85,7 @@ class DoseEngine:
             model_data_dirpath = pkg_resources.resource_filename('PGINN', 'nn_models/iDOTA/default_model_directory')
             self.logger.warning('Deep learning model path not provided. Loading default iDOTA model.')
 
-        # Load model object, which automatically loads model weights and implements preprocess, infer, and postprocess functions
+        # Load model object, which loads model weights and implements preprocess, infer, and postprocess functions
         self.model = ModelFactory.create(model_architechture_name,
             model_data_dirpath=model_data_dirpath,
             model_weights_path=model_weights_filepath,
