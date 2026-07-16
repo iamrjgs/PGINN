@@ -1,4 +1,4 @@
-Physics and Geometry Informed Neural Network (PGINN) VMAT Radiotherapy Dose Engine
+Physics and Geometry Informed Neural Network (PGINN) VMAT Radiotherapy Dose Engine.
 
 Uses deep learning to perform fast dose calculations of patient VMAT plans.
 

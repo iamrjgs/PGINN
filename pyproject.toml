@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "PGINN"
-version = "2.2.0"
+version = "2.2.1"
 description = "Physics and Geometry Informed Neural Network radiotherapy dose calculation engine with ray-tracing input generation."
 authors = [
     { name = "Ankit Pant", email = "apant@buffalo.edu" },
