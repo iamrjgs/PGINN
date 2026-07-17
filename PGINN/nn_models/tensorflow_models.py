@@ -21,8 +21,8 @@ class iDOTAModel(TensorflowModel):
         self.architechture_name = 'IDOTA'
 
     def create_model_backbone(self, param):
-        from .iDOTA.models import dota_residual_original, dota_residual_new
-        model_to_use = dota_residual_new if self.use_stacked_input_pipeline else dota_residual_original
+        from .iDOTA.models import dota_residual_original, dota_residual
+        model_to_use = dota_residual if self.use_stacked_input_pipeline else dota_residual_original
         return model_to_use(
             inshape=param["inshape"],
             steps=param["num_levels"],
