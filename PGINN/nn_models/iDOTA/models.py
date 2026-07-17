@@ -97,7 +97,7 @@ def dota_residual_original(inshape, steps, enc_feats, num_heads, num_transformer
     return Model(inputs=[ct_vol, ray_tr], outputs=dose)
 
 
-def dota_residual_new(inshape, steps, enc_feats, num_heads, num_transformers,
+def dota_residual(inshape, steps, enc_feats, num_heads, num_transformers,
     kernel_size, dropout_rate=0.2, causal=True):
 
     slice_dim = inshape[1:]
